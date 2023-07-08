@@ -37,7 +37,7 @@ def standby_mode(cmd):
 
 def weather(city):	
 	#CITY = "Ho Chi Minh City, VN"
-	API_KEY = "5d6c28a3de83e2280b2497c8674bc0f5"
+	API_KEY = "" #pls get your own api
 	URL = "https://api.openweathermap.org/data/2.5/weather?" + "q=" + city + " &appid=" + API_KEY
 	response = requests.get(URL)
 	data = response.json()
